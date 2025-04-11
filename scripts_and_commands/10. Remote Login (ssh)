@@ -1,0 +1,10 @@
+#Example: Setup Key-Based SSH Login
+
+# On client machine
+ssh-keygen
+
+# Copy key to server
+ssh-copy-id user@remote_ip
+
+# Now login without password
+ssh user@remote_ip
