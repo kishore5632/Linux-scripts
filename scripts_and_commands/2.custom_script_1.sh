@@ -1,3 +1,5 @@
+#Example: Create a Startup Script for Apache
+
 # Create custom script
 sudo nano /etc/init.d/myapache
 
