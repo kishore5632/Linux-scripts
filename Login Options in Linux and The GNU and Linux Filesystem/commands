@@ -1,0 +1,83 @@
+1. Partition Types
+
+🔧 Example: View partition table
+
+sudo fdisk -l
+
+2. Filesystem Types
+
+🔧 Example: Format a partition with XFS
+
+
+sudo mkfs.xfs /dev/sdb1
+
+3. Mounting
+
+🔧 Example: Mount a USB drive
+
+
+sudo mount /dev/sdb1 /mnt/usb
+Unmount:
+
+
+sudo umount /mnt/usb
+
+ 4. Automount
+
+🔧 Example: Auto-mount with fstab
+
+
+# Add to /etc/fstab
+/dev/sdb1  /mnt/usb  xfs  defaults  0 0
+
+# Test
+sudo mount -a
+
+
+ 5. File Types
+
+🔧 Example: Check file types
+
+
+ls -l
+Look at first character:
+
+
+# Example output
+-rw-r--r-- file.txt       # regular
+drwxr-xr-x folder/        # directory
+lrwxrwxrwx link -> file   # symlink
+
+6. File Security
+
+🔧 Example: Set file permissions
+
+
+# Create and restrict access
+touch secret.txt
+chmod 600 secret.txt
+chown student:student secret.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
