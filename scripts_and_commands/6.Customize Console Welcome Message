@@ -1,0 +1,6 @@
+sudo nano /etc/issue
+
+# Add:
+Welcome to Linux Training Console - Prepared by [YourName]
+
+# Save and check by pressing Ctrl+Alt+F3
