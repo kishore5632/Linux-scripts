@@ -1,0 +1,4 @@
+#Example: Disable tty5 and tty6 for Security
+
+sudo systemctl mask getty@tty5.service
+sudo systemctl mask getty@tty6.service
