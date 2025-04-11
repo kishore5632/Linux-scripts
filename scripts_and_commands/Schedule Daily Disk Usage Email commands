@@ -3,3 +3,7 @@ crontab -e
 
 # Add line:
 0 8 * * * df -h | mail -s "Disk Report" user@example.com
+
+# /etc/anacrontab
+1   10  disk.daily  /home/user/disk_report.sh
+
