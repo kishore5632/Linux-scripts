@@ -1,0 +1,8 @@
+# View current run level
+systemctl get-default
+
+# Change default to multi-user (CLI)
+sudo systemctl set-default multi-user.target
+
+# Reboot to apply
+sudo reboot
