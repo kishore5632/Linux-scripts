@@ -1,0 +1,8 @@
+#Example: Shutdown the System at 10 PM
+echo "shutdown -h now" | at 22:00
+
+# List jobs
+atq
+
+# Remove job
+atrm 1
