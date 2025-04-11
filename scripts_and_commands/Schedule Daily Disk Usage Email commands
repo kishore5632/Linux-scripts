@@ -1,0 +1,5 @@
+# Edit crontab
+crontab -e
+
+# Add line:
+0 8 * * * df -h | mail -s "Disk Report" user@example.com
