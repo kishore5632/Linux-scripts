@@ -1,0 +1,5 @@
+# Add entry to /etc/fstab
+UUID=<drive-uuid> /mnt/backup ext4 defaults 0 2
+
+# Check with:
+sudo mount -a
