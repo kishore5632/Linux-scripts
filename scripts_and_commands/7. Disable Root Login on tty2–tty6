@@ -1,0 +1,6 @@
+sudo nano /etc/securetty
+
+# Keep only:
+tty1
+
+# Now, root can only log in via Ctrl+Alt+F1
